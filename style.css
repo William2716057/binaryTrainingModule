@@ -59,13 +59,6 @@ h1 {
     line-height: 1.7;
 }
 
-.panel {
-    background: linear-gradient(145deg, #19263d, #121c30);
-    border: 1px solid #293b58;
-    border-radius: 24px;
-    padding: 32px;
-    box-shadow: 0 25px 70px #00000055;
-}
 
 .section-label {
     color: var(--muted);
@@ -162,33 +155,48 @@ button {
     font-weight: 700;
     cursor: pointer;
     transition: 0.2s ease;
+    animation: hell 10s infinite ease-in-out;
 }
 
-    button:hover {
-        background: var(--accent-hover);
-        transform: translateY(-2px);
+@keyframes hell {
+    from {
+        box-shadow: 0px 0px 44px -3px rgba(191, 41, 31, 1);
     }
 
-    button:active {
-        transform: scale(0.97);
+    50% {
+        box-shadow: 0px 0px 48px 10px rgba(191, 41, 31, 1);
     }
 
-    button:focus-visible,
-    input:focus-visible {
-        outline: 3px solid var(--accent-hover);
-        outline-offset: 3px;
+    to {
+        box-shadow: 0px 0px 44px -3px rgba(191, 41, 31, 1);
     }
+}
 
-    button.ghost {
-        background: #202e45;
-        color: var(--muted);
-        border: 1px solid #3b506e;
+button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--accent-hover);
+    outline-offset: 3px;
+}
+
+button.ghost {
+    background: #202e45;
+    color: var(--muted);
+    border: 1px solid #3b506e;
+}
+
+    button.ghost:hover {
+        background: #2a3b56;
+        color: white;
     }
-
-        button.ghost:hover {
-            background: #2a3b56;
-            color: white;
-        }
 
 .msg {
     min-height: 24px;
