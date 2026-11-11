@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Read the Binary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <header class="header">
+            <div class="eyebrow">Binary training module</div>
+            <h1>Read the Binary<span style="color: var(--accent)">.</span></h1>
+            <p class="sub">
+                Test your understanding of binary numbers.
+                Convert the bits below into their decimal equivalent.
+            </p>
+        </header>
+
+        <div class="panel">
+
+            <div class="section-label">Binary representation</div>
+
+            <div class="bits" id="bits" aria-live="polite"></div>
+
+            <div class="answer-section">
+
+                <label for="answer">Your answer (decimal)</label>
+
+                <div class="row">
+                    <input id="answer"
+                           type="text"
+                           inputmode="numeric"
+                           autocomplete="off"
+                           placeholder="Enter decimal value...">
+
+                    <button id="check">Check answer</button>
+                </div>
+
+                <p class="msg" id="msg" role="status" aria-live="polite"></p>
+
+            </div>
+
+            <div class="foot">
+
+                <div>
+                    <div class="section-label" style="text-align:left; margin-bottom:10px">
+                        Bit length
+                    </div>
+
+                    <div class="size" id="size" role="group" aria-label="Number of bits"></div>
+                </div>
+
+                <div class="score">
+                    <span>Streak <strong id="streak">0</strong></span>
+                    <span>Best <strong id="best">0</strong></span>
+                </div>
+
+                <button class="ghost" id="skip">Show answer</button>
+
+            </div>
+
+        </div>
+
+        <div class="credits">
+            Binary Training · Learn one bit at a time
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

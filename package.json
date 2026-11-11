@@ -1,0 +1,14 @@
+{
+  "name": "binary-game",
+  "version": "0.0.0",
+  "description": "binaryGame",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {
+  }
+}

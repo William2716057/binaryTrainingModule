@@ -1,0 +1,3 @@
+C:\Users\Wills\source\repos\binaryGame\binaryGame\obj\Debug\binaryGame.njsproj.AssemblyReference.cache
+C:\Users\Wills\source\repos\binaryGame\binaryGame\obj\Debug\binaryGame.njsproj.CoreCompileInputs.cache
+C:\Users\Wills\source\repos\binaryGame\binaryGame\bin\Microsoft.NodejsTools.WebRole.dll
