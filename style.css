@@ -37,8 +37,9 @@ main {
     margin-bottom: 28px;
 }
 
-.eyebrow {
-    color: var(--accent);
+.module {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 3px;
