@@ -6,6 +6,7 @@
     --xenomorph-glow: rgba(44, 53, 49, 0.4);
     --accent: #628cff;
     --accent-hover: #82a4ff;
+    --blood-red: #a83232;
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
     background-color: var(--bg-dark);
-    color: var(--bone-white);
+    color: var(--blood-red);
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
     min-height: 100vh;
@@ -47,7 +48,7 @@ main {
 
 h1 {
     font-size: clamp(2rem, 6vw, 3rem);
-    font-weight: 800;
+    font-weight: 00;
     letter-spacing: -1.5px;
     margin: 0;
 }
@@ -77,6 +78,7 @@ h1 {
     gap: 12px 20px;
     margin-bottom: 36px;
 }
+
 
 .nib {
     display: flex;
