@@ -8,10 +8,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
-    <style>
-    </style>
 </head>
 
 <body>
@@ -19,9 +17,10 @@
     <main>
 
         <header class="header">
-            <div class="module">Binary training module</div>
-            <h1>Read the Binary</h1>
-            <p class="sub">
+            <button class="ghost" id="lang" type="button">日本語</button>
+            <div class="module" data-i18n="module">Binary training module</div>
+            <h1 data-i18n="title">Read the Binary</h1>
+            <p class="sub" data-i18n="sub">
                 Test your understanding of binary numbers.
                 Convert the bits below into their decimal equivalent.
             </p>
@@ -29,22 +28,23 @@
 
         <div class="panel">
 
-            <div class="section-label">Binary representation</div>
+            <div class="section-label" data-i18n="repr">Binary representation</div>
 
             <div class="bits" id="bits" aria-live="polite"></div>
 
             <div class="answer-section">
 
-                <label for="answer">Your answer (decimal)</label>
+                <label for="answer" data-i18n="label">Your answer (decimal)</label>
 
                 <div class="row">
                     <input id="answer"
                            type="text"
                            inputmode="numeric"
                            autocomplete="off"
+                           data-i18n-placeholder="placeholder"
                            placeholder="Enter decimal value...">
 
-                    <button class="ghost" id="check">Check answer</button>
+                    <button class="ghost" id="check" type="button">Check answer</button>
                 </div>
 
                 <p class="msg" id="msg" role="status" aria-live="polite"></p>
@@ -54,32 +54,34 @@
             <div class="foot">
 
                 <div>
-                    <div class="section-label" style="text-align:left; margin-bottom:10px">
-                        Bit length
-                    </div>
+                    <div class="section-label left" data-i18n="bitLength">Bit length</div>
 
                     <div class="size" id="size" role="group" aria-label="Number of bits"></div>
                 </div>
 
                 <div class="score">
-                    <span>Streak <strong id="streak">0</strong></span>
-                    <span>Best <strong id="best">0</strong></span>
+                    <span><span data-i18n="streak">Streak</span> <strong id="streak">0</strong></span>
+                    <span><span data-i18n="best">Best</span> <strong id="best">0</strong></span>
                 </div>
 
-                <button class="ghost" id="skip">Show answer</button>
+                <button class="ghost" id="skip" type="button">Show answer</button>
 
             </div>
 
         </div>
 
-        <div class="credits">
-            Binary Training · Learn one bit at a time
-        </div>
+        
 
     </main>
 
     <script src="script.js"></script>
 
+    <!--add language options-->
+    <!--Esperanto-->
+    <!--runes-->
+    <!--hex-->
+    <!--base64-->
+    <!--ascii-->
 
 </body>
 </html>
